@@ -1,22 +1,9 @@
-import { Component } from 'react'
-import { View, Text } from '@tarojs/components'
-import './index.css'
+import { Title, Wrapper } from "./index.style";
 
-export default class Index extends Component {
-
-  componentDidMount () { }
-
-  componentWillUnmount () { }
-
-  componentDidShow () { }
-
-  componentDidHide () { }
-
-  render () {
-    return (
-      <View className='index'>
-        <Text>Hello world!</Text>
-      </View>
-    )
-  }
+export default function Index() {
+  return (
+    <Wrapper className="index">
+      <Title>Hello World</Title>
+    </Wrapper>
+  );
 }
