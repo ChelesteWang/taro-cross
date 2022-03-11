@@ -41,7 +41,7 @@ const config = {
         }
       }
     },
-    webpackChain(chain, webpack) {
+    webpackChain(chain) {
       // linaria/loader 选项详见 https://github.com/callstack/linaria/blob/master/docs/BUNDLERS_INTEGRATION.md#webpack
       chain.module
         .rule('script')
@@ -69,7 +69,7 @@ const config = {
         }
       }
     },
-    webpackChain(chain, webpack) {
+    webpackChain(chain) {
       // linaria/loader 选项详见 https://github.com/callstack/linaria/blob/master/docs/BUNDLERS_INTEGRATION.md#webpack
       chain.module
         .rule('script')
