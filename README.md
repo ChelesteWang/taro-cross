@@ -10,3 +10,14 @@
 6. 跨端中如何处理不同环境导致的 runtime 有所不同
 7. 一些在原生应用中不支持的组件如何解决
 8. 如何进行调试（h5 first , taro playground）
+
+## 踩坑记录
+
+M1 无法使用 pod install
+
+```shell
+sudo arch -x86_64 gem install ffi
+arch -x86_64 pod install
+```
+
+RN 兼容样式方案
