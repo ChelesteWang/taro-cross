@@ -10,12 +10,12 @@
   },
   "scripts": {
     "build:weapp": "taro build --type weapp",
-    "build:swan": "taro build --type swan",
+    "bui5ld:swan": "taro build --type swan",
     "build:alipay": "taro build --type alipay",
     "build:tt": "taro build --type tt",
     "build:h5": "taro build --type h5",
     "build:rn": "taro build --type rn",
-    "build:ios":"taro build --type rn --platform ios",
+    "build:ios": "taro build --type rn --platform ios",
     "build:qq": "taro build --type qq",
     "build:jd": "taro build --type jd",
     "build:quickapp": "taro build --type quickapp",
@@ -39,6 +39,11 @@
     "Android >= 4.1",
     "ios >= 8"
   ],
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ]
+  },
   "author": "",
   "dependencies": {
     "@babel/runtime": "^7.7.7",
