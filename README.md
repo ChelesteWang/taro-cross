@@ -13,10 +13,14 @@
 
 ## 踩坑记录
 
+先 upgradePeerdeps 安装一下 react-native 需要的 peerDependence
+
 M1 无法使用 pod install
 
 ```shell
+sudo gem install cocoapods
 sudo arch -x86_64 gem install ffi
+cd ios
 arch -x86_64 pod install
 ```
 
